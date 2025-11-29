@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace Pastel - Landing</title>
 
-    <!-- Bootstrap CSS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Font -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -23,7 +23,7 @@
             margin: 0;
         }
 
-        /* Navbar simple (sin links a otras páginas) */
+
         .navbar {
             background: rgba(255, 255, 255, 0.9) !important;
             backdrop-filter: blur(14px);
@@ -152,41 +152,9 @@
             flex-wrap: wrap;
         }
 
-        /* Sección beneficios */
-        .benefits-section {
-            padding: 40px 0 10px;
-        }
-
-        .benefit-card {
-            background: rgba(255, 255, 255, 0.85);
-            border-radius: 18px;
-            padding: 20px 18px;
-            box-shadow: 0 8px 20px rgba(139, 111, 179, 0.13);
-            border: 1px solid rgba(212, 165, 217, 0.3);
-            height: 100%;
-        }
-
-        .benefit-icon {
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .benefit-title {
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: #7b5ea8;
-            margin-bottom: 0.3rem;
-        }
-
-        .benefit-text {
-            font-size: 0.9rem;
-            color: #7a6a8a;
-            line-height: 1.6;
-        }
-
-        /* Productos */
+        /* Carrusel de productos */
         .products-section {
-            padding: 40px 0 60px;
+            padding: 50px 0 70px;
         }
 
         .section-title {
@@ -205,12 +173,6 @@
             margin: 0 auto 35px;
         }
 
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 26px;
-        }
-
         .product-card {
             border-radius: 22px;
             box-shadow: 0 15px 35px rgba(139, 111, 179, 0.18);
@@ -219,6 +181,7 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            height: 100%;
         }
 
         .product-card::before {
@@ -320,7 +283,7 @@
             opacity: 0.95;
         }
 
-        /* Paletas por card */
+        /* Paletas de color por card */
         .card-1 {
             background: linear-gradient(145deg, #ffe6f0 0%, #fff7ff 50%, #fbe9ff 100%);
             border-color: #f7c2da;
@@ -354,41 +317,43 @@
 
         .card-3 .price { color: #8a76d8; }
 
-        /* Cómo funciona */
+        .card-4 {
+            background: linear-gradient(145deg, #fff8e8 0%, #fff9ef 40%, #ffeeda 100%);
+            border-color: #ffd9a8;
+        }
+
+        .card-4::before {
+            background: radial-gradient(circle, #ffd9a8, #ffc27a);
+        }
+
+        .card-4 .price { color: #e29b3a; }
+
+        .card-5 {
+            background: linear-gradient(145deg, #f2fff5 0%, #f8fff9 40%, #e6ffe9 100%);
+            border-color: #c6f0ce;
+        }
+
+        .card-5::before {
+            background: radial-gradient(circle, #b9efc2, #8ddf9e);
+        }
+
+        .card-5 .price { color: #64b57a; }
+
+        .card-6 {
+            background: linear-gradient(145deg, #e9f9ff 0%, #f5fdff 40%, #e9f4ff 100%);
+            border-color: #b8e0ff;
+        }
+
+        .card-6::before {
+            background: radial-gradient(circle, #bfe4ff, #94cff7);
+        }
+
+        .card-6 .price { color: #5d9fd0; }
+
+        /* Sección "cómo funciona" opcional sencilla */
         .how-section {
-            padding: 50px 0 40px;
+            padding: 40px 0 30px;
             background: linear-gradient(135deg, rgba(245, 222, 249, 0.7), rgba(228, 240, 255, 0.8));
-        }
-
-        .step-card {
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 18px;
-            padding: 18px;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(139, 111, 179, 0.13);
-            border: 1px solid rgba(212, 165, 217, 0.3);
-            height: 100%;
-        }
-
-        .step-number {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 0.6rem;
-            font-weight: 600;
-            background: linear-gradient(135deg, #f9c5d1, #f6e0ff);
-            color: #6b4a8b;
-            font-size: 0.9rem;
-        }
-
-        .step-title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #7b5ea8;
-            margin-bottom: 0.3rem;
         }
 
         .step-text {
@@ -417,17 +382,8 @@
             .hero-title {
                 font-size: 2.2rem;
             }
-
             .hero-subtitle {
                 font-size: 1.05rem;
-            }
-
-            .section-title {
-                font-size: 1.7rem;
-            }
-
-            .cards-grid {
-                grid-template-columns: 1fr;
             }
         }
 
@@ -435,7 +391,6 @@
             .hero-title {
                 font-size: 1.9rem;
             }
-
             .hero-section {
                 padding-top: 80px;
             }
@@ -444,18 +399,18 @@
 </head>
 <body>
 
-    <!-- Navbar / Header (sin links a otras páginas) -->
+
     <nav class="navbar">
         <div class="container d-flex justify-content-between align-items-center">
             <div>
                 <span class="navbar-brand">
                     🎀 Marketplace Pastel
                 </span>
-                <small>Un rincón lleno de cosas suaves y bonitas</small>
+                <small>Landing de ejemplo en tonos suaves</small>
             </div>
             <div class="d-none d-md-flex gap-2">
                 <button type="button" class="btn btn-pastel-outline">
-                    Ver catálogo destacado
+                    Ver productos
                 </button>
                 <button type="button" class="btn btn-pastel-solid">
                     Empezar ahora ✨
@@ -464,226 +419,260 @@
         </div>
     </nav>
 
-    <!-- Hero principal -->
+
     <header class="hero-section">
         <div class="container hero-content">
             <div class="hero-pill">
-                🌸 Curaduría cuidadosa • Colores pastel • Detalles que alegran el día
+                🌸 Curaduría pastel • Catálogo destacado • Landing lista para usar
             </div>
-            <h1 class="hero-title">Tu landing de cosas lindas en tonos pastel</h1>
+            <h1 class="hero-title">Tu marketplace en una sola landing pastel</h1>
             <p class="hero-subtitle">
-                Una selección de objetos pensados para que tu hogar, tu escritorio y tus momentos de pausa se sientan más suaves.
+                Presenta tu catálogo y tus productos estrella con un carrusel pastel en una sola fila.
             </p>
             <p class="hero-description">
-                Este marketplace reúne productos en paletas pastel: decoración, papelería, bienestar y organización. 
-                Es una experiencia pensada para quienes aman los detalles delicados, los espacios acogedores y los objetos que cuentan historias.
-                Puedes usar esta landing para presentar tu catálogo, captar interés y mostrar tus productos estrella.
+                Esta landing está pensada para mostrar tus productos con una estética suave y coherente.
+                El carrusel te permite destacar varios ítems sin recargar la pantalla, manteniendo un flujo de navegación
+                sencillo y visualmente agradable para quien visita por primera vez tu marketplace.
             </p>
             <div class="hero-cta">
                 <button type="button" class="btn btn-pastel-solid">
-                    Quiero ver los productos destacados
+                    Ver carrusel de productos
                 </button>
                 <button type="button" class="btn btn-pastel-outline">
-                    Saber cómo funciona la experiencia pastel
+                    Personalizar textos y precios
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Beneficios clave -->
-    <section class="benefits-section">
-        <div class="container">
-            <div class="row g-3">
-                <div class="col-md-4">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">🎨</div>
-                        <div class="benefit-title">Paletas pastel coherentes</div>
-                        <p class="benefit-text">
-                            Cada producto está pensando en combinación con el resto del catálogo, 
-                            para que puedas armar espacios armoniosos sin preocuparte por el contraste de colores.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">🧺</div>
-                        <div class="benefit-title">Curaduría de productos</div>
-                        <p class="benefit-text">
-                            La selección incluye solo piezas que cumplen con criterios de calidad, estética y funcionalidad, 
-                            para que cada compra se sienta como un pequeño regalo bien elegido.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">💌</div>
-                        <div class="benefit-title">Enfoque en la experiencia</div>
-                        <p class="benefit-text">
-                            Más que un carrito, es una experiencia: empaques cuidados, mensajes personalizados y una narrativa visual suave 
-                            desde la landing hasta la entrega.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Productos destacados -->
-    <main class="products-section">
+    <section class="products-section">
         <div class="container">
-            <h2 class="section-title">Productos destacados en tonos pastel</h2>
+            <h2 class="section-title">Productos destacados en carrusel</h2>
             <p class="section-subtitle">
-                Esta sección muestra algunos ejemplos de cómo se vería tu catálogo dentro del marketplace: 
-                tarjetas con descripciones claras, precios y botones de acción, todo en una estética pastel coherente.
+                El carrusel muestra tus productos en una sola fila. En pantallas grandes se ven tres a la vez, 
+                en móviles se adapta para que se vea uno por slide, manteniendo siempre el estilo pastel.
             </p>
 
-            <div class="cards-grid">
-                <!-- Producto 1 -->
-                <div class="product-card card-1">
-                    <div class="product-header">
-                        <div class="product-icon">💐</div>
-                        <span class="badge-pill">Decoración floral</span>
-                    </div>
-                    <div class="product-title">Ramo de flores secas pastel</div>
-                    <div class="product-description">
-                        Un arreglo de flores secas en tonos rosa, lila y crema, ideal para escritorios, 
-                        repisas o espacios pequeños. No requiere mantenimiento y mantiene su encanto durante meses, 
-                        aportando calidez y un toque romántico a cualquier rincón.
-                    </div>
-                    <div class="product-extra">
-                        Incluye tarjeta para mensaje breve y embalaje reutilizable en papel kraft con cinta pastel.
-                    </div>
-                    <div class="price-container">
-                        <div>
-                            <div class="price-label">Desde</div>
-                            <div class="price">$12.000</div>
-                            <div class="price-note">Formato mediano • 2 variantes de color</div>
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+
+                    <div class="carousel-item active">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="product-card card-1">
+                                    <div class="product-header">
+                                        <div class="product-icon">💐</div>
+                                        <span class="badge-pill">Decoración floral</span>
+                                    </div>
+                                    <div class="product-title">Ramo de flores secas pastel</div>
+                                    <div class="product-description">
+                                        Un arreglo en tonos rosa, lila y crema, ideal para escritorios, repisas
+                                        o espacios pequeños. No requiere mantenimiento y mantiene su encanto durante meses,
+                                        aportando calidez y un toque romántico.
+                                    </div>
+                                    <div class="product-extra">
+                                        Tarjeta para mensaje breve y empaque reutilizable en papel kraft con cinta pastel.
+                                    </div>
+                                    <div class="price-container">
+                                        <div>
+                                            <div class="price-label">Desde</div>
+                                            <div class="price">$12.000</div>
+                                            <div class="price-note">Formato mediano • 2 variantes</div>
+                                        </div>
+                                        <button type="button" class="btn-card">Ver más</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 d-none d-md-block">
+                                <div class="product-card card-2">
+                                    <div class="product-header">
+                                        <div class="product-icon">🕯️</div>
+                                        <span class="badge-pill">Bienestar & aroma</span>
+                                    </div>
+                                    <div class="product-title">Velas “Nube suave”</div>
+                                    <div class="product-description">
+                                        Velas aromáticas en envases de vidrio esmerilado con etiquetas azul y celeste pastel.
+                                        Aromas suaves como lavanda, vainilla y algodón limpio para acompañar tus momentos de calma.
+                                    </div>
+                                    <div class="product-extra">
+                                        Tiempo de combustión aprox. 25 horas por vela. Perfectas para rutinas de autocuidado.
+                                    </div>
+                                    <div class="price-container">
+                                        <div>
+                                            <div class="price-label">Desde</div>
+                                            <div class="price">$9.900</div>
+                                            <div class="price-note">Pack de 3 • Recarga disponible</div>
+                                        </div>
+                                        <button type="button" class="btn-card">Encender ambiente</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 d-none d-md-block">
+                                <div class="product-card card-3">
+                                    <div class="product-header">
+                                        <div class="product-icon">🎨</div>
+                                        <span class="badge-pill">Escritorio creativo</span>
+                                    </div>
+                                    <div class="product-title">Set de papelería “Sueños pastel”</div>
+                                    <div class="product-description">
+                                        Libreta en degradé lila-rosa, stickers temáticos, bloc de notas adhesivas
+                                        y cintas washi coordinadas. Ideal para journaling, planificación y notas bonitas.
+                                    </div>
+                                    <div class="product-extra">
+                                        Papeles libres de ácido, aptos para marcadores y plumones de uso diario.
+                                    </div>
+                                    <div class="price-container">
+                                        <div>
+                                            <div class="price-label">Desde</div>
+                                            <div class="price">$15.500</div>
+                                            <div class="price-note">Edición limitada • Sobre reutilizable</div>
+                                        </div>
+                                        <button type="button" class="btn-card">Organizar con estilo</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <button type="button" class="btn-card">
-                            Ver más detalles
-                        </button>
                     </div>
-                </div>
 
-                <!-- Producto 2 -->
-                <div class="product-card card-2">
-                    <div class="product-header">
-                        <div class="product-icon">🕯️</div>
-                        <span class="badge-pill">Bienestar & aroma</span>
-                    </div>
-                    <div class="product-title">Velas “Nube suave”</div>
-                    <div class="product-description">
-                        Velas aromáticas en envases de vidrio esmerilado con etiquetas en tonos azul y celeste pastel. 
-                        Aromas suaves como lavanda, vainilla y algodón limpio acompañan tus momentos de lectura, estudio o descanso sin saturar el ambiente.
-                    </div>
-                    <div class="product-extra">
-                        Tiempo de combustión aproximado: 25 horas por vela. Perfectas para espacios íntimos y rutinas de autocuidado.
-                    </div>
-                    <div class="price-container">
-                        <div>
-                            <div class="price-label">Desde</div>
-                            <div class="price">$9.900</div>
-                            <div class="price-note">Pack de 3 unidades • Recarga disponible</div>
+
+                    <div class="carousel-item">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="product-card card-4">
+                                    <div class="product-header">
+                                        <div class="product-icon">🛋️</div>
+                                        <span class="badge-pill">Textiles & hogar</span>
+                                    </div>
+                                    <div class="product-title">Cojines “Atardecer pastel”</div>
+                                    <div class="product-description">
+                                        Pack de cojines en tonos durazno, crema y coral suave, inspirados en un atardecer tranquilo.
+                                        Ideales para sofá, cama o rincón de lectura, aportan textura y calidez.
+                                    </div>
+                                    <div class="product-extra">
+                                        Fundas lavables con cierre invisible y relleno incluido.
+                                    </div>
+                                    <div class="price-container">
+                                        <div>
+                                            <div class="price-label">Desde</div>
+                                            <div class="price">$14.200</div>
+                                            <div class="price-note">Pack de 2 • Varios tamaños</div>
+                                        </div>
+                                        <button type="button" class="btn-card">Suavizar tu espacio</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 d-none d-md-block">
+                                <div class="product-card card-5">
+                                    <div class="product-header">
+                                        <div class="product-icon">🧴</div>
+                                        <span class="badge-pill">Rutina de baño</span>
+                                    </div>
+                                    <div class="product-title">Kit spa “Verde menta pastel”</div>
+                                    <div class="product-description">
+                                        Jabones artesanales, sales de baño y mini exfoliante suave
+                                        en envases coordinados en tonos menta y verde agua, para un mini spa en casa.
+                                    </div>
+                                    <div class="product-extra">
+                                        Fórmulas biodegradables y libres de parabenos, con fragancias frescas y ligeras.
+                                    </div>
+                                    <div class="price-container">
+                                        <div>
+                                            <div class="price-label">Desde</div>
+                                            <div class="price">$8.500</div>
+                                            <div class="price-note">Formato prueba • Opción eco-refill</div>
+                                        </div>
+                                        <button type="button" class="btn-card">Tiempo para ti</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 d-none d-md-block">
+                                <div class="product-card card-6">
+                                    <div class="product-header">
+                                        <div class="product-icon">📚</div>
+                                        <span class="badge-pill">Organización pastel</span>
+                                    </div>
+                                    <div class="product-title">Organizadores “Nube azul”</div>
+                                    <div class="product-description">
+                                        Set de cajas apilables en azul cielo y celeste pastel para ordenar escritorio,
+                                        baño o cocina, aprovechando mejor el espacio sin perder estética.
+                                    </div>
+                                    <div class="product-extra">
+                                        Plástico resistente, liviano y fácil de limpiar, pensado para uso diario.
+                                    </div>
+                                    <div class="price-container">
+                                        <div>
+                                            <div class="price-label">Desde</div>
+                                            <div class="price">$7.800</div>
+                                            <div class="price-note">Set de 3 • Dos alturas</div>
+                                        </div>
+                                        <button type="button" class="btn-card">Ordenar en pastel</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <button type="button" class="btn-card">
-                            Encender ambiente
-                        </button>
                     </div>
+
                 </div>
 
-                <!-- Producto 3 -->
-                <div class="product-card card-3">
-                    <div class="product-header">
-                        <div class="product-icon">🎨</div>
-                        <span class="badge-pill">Escritorio creativo</span>
-                    </div>
-                    <div class="product-title">Set de papelería “Sueños pastel”</div>
-                    <div class="product-description">
-                        Un kit completo para journaling, planificación y notas bonitas: libreta en degradé lila-rosa, 
-                        stickers temáticos, bloc de notas adhesivas y cintas washi coordinadas. 
-                        Ideal para quienes aman organizar su día con creatividad.
-                    </div>
-                    <div class="product-extra">
-                        Papeles libres de ácido, aptos para marcadores y plumones, pensados para uso diario.
-                    </div>
-                    <div class="price-container">
-                        <div>
-                            <div class="price-label">Desde</div>
-                            <div class="price">$15.500</div>
-                            <div class="price-note">Edición limitada • Incluye sobre reutilizable</div>
-                        </div>
-                        <button type="button" class="btn-card">
-                            Organizar con estilo
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
 
-    <!-- Cómo funciona la experiencia -->
-    <section class="how-section">
-        <div class="container">
-            <h2 class="section-title">¿Cómo funcionaría tu marketplace pastel?</h2>
-            <p class="section-subtitle">
-                Esta landing puede ser el primer contacto con tus clientes: presentas tu propuesta, muestras tus productos clave 
-                y explicas de forma simple cómo es la experiencia de compra en tu plataforma.
-            </p>
-
-            <div class="row g-3">
-                <div class="col-md-4">
-                    <div class="step-card">
-                        <div class="step-number">1</div>
-                        <div class="step-title">Explorar el catálogo</div>
-                        <p class="step-text">
-                            La persona llega a esta landing y descubre tus categorías y productos destacados, 
-                            entendiendo de inmediato el estilo y la calidad de lo que ofreces.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="step-card">
-                        <div class="step-number">2</div>
-                        <div class="step-title">Elegir sus favoritos</div>
-                        <p class="step-text">
-                            A través de tarjetas claras y visuales, selecciona los productos que encajan mejor con su hogar, 
-                            su rutina o el regalo que quiere hacer.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="step-card">
-                        <div class="step-number">3</div>
-                        <div class="step-title">Confirmar la experiencia</div>
-                        <p class="step-text">
-                            Luego, tu flujo de compra (fuera de esta landing) se encarga de la magia: pagos, envíos y seguimiento, 
-                            manteniendo siempre la estética y el tono pastel.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-4">
-                <button type="button" class="btn btn-pastel-solid">
-                    Quiero usar esta landing para mi marketplace
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Footer simple (sin links externos) -->
+ 
+    <section class="how-section">
+        <div class="container">
+            <h2 class="section-title">¿Cómo se ve esta landing en tu proyecto?</h2>
+            <p class="section-subtitle">
+                Puedes adaptar nombres, textos y precios para conectar el carrusel con tu base de datos o tu backend.
+            </p>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <p class="step-text">
+                        1. Integra este HTML como tu <strong>index.html</strong> o landing principal.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="step-text">
+                        2. Reemplaza textos y valores según tus productos reales, manteniendo los estilos pastel.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="step-text">
+                        3. Si usas Django, puedes convertir cada card en un bloque que se rellene con un <strong>for</strong> sobre tus productos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <footer>
         <div class="container">
             <p class="mb-1">
-                <span class="footer-highlight">Marketplace Pastel</span> es una landing de ejemplo para presentar tu catálogo en tonos suaves.
+                <span class="footer-highlight">Marketplace Pastel</span> • Landing de ejemplo con carrusel en una sola fila.
             </p>
             <p class="mb-0">
-                Puedes adaptar textos, productos y estilos para que se alineen con tu marca y tu propuesta de valor.
+                Adapta esta estructura a tu marca y a tus productos para lanzar tu propio marketplace pastel.
             </p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS (para responsive, aunque aquí no hay links a otras páginas) -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
