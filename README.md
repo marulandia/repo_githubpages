@@ -1,11 +1,11 @@
-# 👋 Hola, soy Maru Martínez
-### Full Stack Developer · Ciencia de Datos · Ingeniería Bioquímica · UX/UI Enthusiast
+# Hola, soy Maru Martínez
+### Full Stack Developer · Ciencia de Datos · Ingeniería Bioquímica 
 
-Bienvenido a mi portafolio técnico. Aquí encontrarás una selección de mis proyectos más relevantes en desarrollo web, ciencia de datos y diseño UX/UI.
+Bienvenido a mi portafolio técnico. Aquí encontrarás una selección de mis proyectos más relevantes en desarrollo web.
 
 ---
 
-## 🚀 Proyectos Destacados
+## Proyectos Destacados
 
 ### 🔹 Marketplace Django — "Maru y Gatitas"
 Un marketplace funcional desarrollado en Django con gestión de productos, clientes y pedidos.  
@@ -28,7 +28,7 @@ Prototipo UX/UI enfocado en visualización de datos ESG y gestión de residuos.
 
 ---
 
-## 🛠 Tecnologías que manejo
+## Tecnologías que manejo
 
 - **Frontend:** HTML · CSS · Bootstrap · React (básico)
 - **Backend:** Python · Django · REST Framework
@@ -39,7 +39,7 @@ Prototipo UX/UI enfocado en visualización de datos ESG y gestión de residuos.
 
 ---
 
-## 🖼 Banner
+## Banner
 
 Añade una imagen JPG o PNG en la raíz del repo (ej. `banner.jpg`) y reemplaza la ruta donde quieras mostrarla. Por ejemplo:
 
@@ -50,17 +50,17 @@ Añade una imagen JPG o PNG en la raíz del repo (ej. `banner.jpg`) y reemplaza 
 
 ---
 
-## 📌 Hosting del proyecto
+## Hosting del proyecto
 🔗 Demo online: (añade aquí el link de Render/Netlify/GitHub Pages cuando lo publiques)
 
 ---
 
-## 🎥 Video Técnico
+## Video Técnico
 🔗 YouTube: (añade aquí el link del video técnico)
 
 ---
 
-## 📄 Licencia
+## Licencia
 Este proyecto está bajo Licencia MIT.
 
 ---
