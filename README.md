@@ -1,45 +1,91 @@
-# Marketplace Pastel
+# 👋 Hola, soy Maru Martínez
+### Full Stack Developer · Ciencia de Datos · Ingeniería Bioquímica · UX/UI Enthusiast
 
-Pequeña landing estática con diseño "pastel" basada en Bootstrap.
+Bienvenido a mi portafolio técnico. Aquí encontrarás una selección de mis proyectos más relevantes en desarrollo web, ciencia de datos y diseño UX/UI.
 
-**Qué incluye**
-- `index.html`: Landing page responsive creada con Bootstrap 5 (CDN).
-- Estilos personalizados ligeros y una estructura de cards para productos.
+---
 
-**Cómo ver la página (rápido)**
-- Abrir directamente en Windows (PowerShell):
+## 🚀 Proyectos Destacados
+
+### 🔹 Marketplace Django — "Maru y Gatitas"
+Un marketplace funcional desarrollado en Django con gestión de productos, clientes y pedidos.  
+**Tecnologías:** Django, MySQL, Bootstrap, HTML/CSS, GitHub, Render  
+🔗 Código: https://github.com/marulandia/M7_portafolio_marketplace
+
+---
+
+### 🔹 Proyecto UX/UI — "Dashboard de Economía Circular"
+Prototipo UX/UI enfocado en visualización de datos ESG y gestión de residuos.  
+🔗 Behance: (añade aquí tu link de Behance)
+
+---
+
+### 🔹 Scripts de Ciencia de Datos
+- Clasificación de churn con ML  
+- Análisis exploratorio con pandas  
+- Visualizaciones con matplotlib  
+🔗 Repositorio: (añade aquí el link a tu repositorio de Data Science)
+
+---
+
+## 🛠 Tecnologías que manejo
+
+- **Frontend:** HTML · CSS · Bootstrap · React (básico)
+- **Backend:** Python · Django · REST Framework
+- **Data Science:** Pandas · NumPy · Scikit-Learn
+- **Bases de Datos:** MySQL · SQLite · PostgreSQL
+- **DevOps:** GitHub · GitHub Pages · Render · Railway
+- **Diseño:** Figma · Behance · Canva
+
+---
+
+## 🖼 Banner
+
+Añade una imagen JPG o PNG en la raíz del repo (ej. `banner.jpg`) y reemplaza la ruta donde quieras mostrarla. Por ejemplo:
+
+```html
+<!-- Ejemplo: insertar banner en `index.html` -->
+<img src="banner.jpg" alt="Banner Maru" class="img-fluid">
+```
+
+---
+
+## 📌 Hosting del proyecto
+🔗 Demo online: (añade aquí el link de Render/Netlify/GitHub Pages cuando lo publiques)
+
+---
+
+## 🎥 Video Técnico
+🔗 YouTube: (añade aquí el link del video técnico)
+
+---
+
+## 📄 Licencia
+Este proyecto está bajo Licencia MIT.
+
+---
+
+## Cómo ver la landing localmente
+
+1. Abrir directamente en Windows (PowerShell):
 
 ```powershell
 start 'c:\Users\maru2\Downloads\repo_githubpages\index.html'
 ```
 
-**Servir localmente (opcional, útil para probar rutas o cuando uses fetch)**
-- Con Python 3 (desde la carpeta del proyecto):
+2. O servir localmente con Python (útil si usas fetch o rutas relativas):
 
 ```powershell
-# entrar a la carpeta del proyecto si no estás ahí
 Set-Location 'c:\Users\maru2\Downloads\repo_githubpages'
-# servir en http://localhost:8000
 python -m http.server 8000
+# luego abrir http://localhost:8000 en el navegador
 ```
-
-**Dependencias**
-- Ninguna para instalar: la página utiliza CDN de Bootstrap y Google Fonts.
-
-**Despliegue en GitHub Pages**
-- Subir este repo a GitHub y en Settings -> Pages, elegir la rama `main` y la carpeta `/ (root)` como fuente.
-- Alternativa: usar una rama `gh-pages` con herramientas como `gh-pages` o GitHub Actions.
-
-**Notas / próximas mejoras sugeridas**
-- Añadir una imagen hero y una CTA (ej. "Ver catálogo") para mejorar conversión.
-- Conectar el formulario de login (si decides volver a añadirlo) a una API o a Firebase.
-- Reemplazar CDN por paquetes locales si necesitas trabajar offline o sin dependencias externas.
 
 ---
 
 Si quieres, puedo:
-- Añadir una CTA en la hero ahora mismo.
-- Quitar completamente el JS (Bootstrap bundle) para una página 100% estática.
-- Preparar un flujo básico de despliegue a GitHub Pages (workflow de GitHub Actions).
+- Añadir el link de Behance y YouTube si los quieres crear ahora.
+- Preparar un workflow de GitHub Actions para desplegar automáticamente a GitHub Pages o Render.
+- Añadir una CTA en la hero o una imagen banner (`banner.jpg`) y ajustar estilos.
 
 Dime qué prefieres y lo dejo listo.
